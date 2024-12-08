@@ -4,14 +4,30 @@
     width: 100vh;
     align-items: center;
     justify-content: center;
+}
 
-    
+.container .p3{
+    width: 100px;
+    height: 100px;
+    align-items:flex-end;
+    justify-content:flex-end;
+    color: blueviolet;
+    background-color: blanchedalmond;
     
 }
 
-.container p{
-    width: 25%;
-    height: 25%;
+.container .p2{
+    width: 100px;
+    height: 100px;
+    align-items:flex-start;
+    justify-content:flex-start;
+    color: blueviolet;
+    background-color: blanchedalmond;
+    
+}
+.container .p1{
+    width: 100px;
+    height: 100px;
     align-items: center;
     justify-content: center;
     color: blueviolet;
