@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!---<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,5 +30,68 @@
 
     </div>
     
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 300px;
+        }
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+            height: 33.33%;
+            box-sizing: border-box;
+        }
+        .cell.empty {
+            pointer-events: none; /* Make unused cells inactive */
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 1st square -->
+        <div class="cell">
+            <p>Paragraph 1</p>
+        </div>
+        <!-- Empty squares -->
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <!-- 5th square -->
+        <div class="cell">
+            <p>Paragraph 2</p>
+        </div>
+        <!-- Empty squares -->
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <div class="cell empty"></div>
+        <!-- 9th square -->
+        <div class="cell">
+            <p>Paragraph 3</p>
+        </div>
+    </div>
 </body>
 </html>
